@@ -1,0 +1,67 @@
+.clock {
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .6);
+    color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    border: #fff 2px solid;
+
+    &__timming {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        span {
+            font-size: 3rem;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        input {
+            font-size: 4rem;
+            color: #ffffff;
+            // padding: 20px;
+            margin: 0;
+            border: none;
+            background-color: transparent;
+            text-align: center;
+            width: 70px;
+            outline: none;
+
+            font-family: 'VT323', monospace;
+
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+
+        &__buttons {
+            button {
+                margin: 0 10px;
+                padding: 15 0 15 0px;
+                border-radius: 6px;
+                border: none;
+                background-color: #fff;
+                color: #000;
+                font-size: 2rem;
+                font-family: 'VT323', monospace;
+                cursor: pointer;
+                transition-property: all;
+                transition-duration: 0.5s;
+
+                &:hover {
+                    background-color: #000;
+                    color: #fff;
+
+                }
+            }
+
+
+
+        }
+    }
+}

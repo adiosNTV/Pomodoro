@@ -1,0 +1,10 @@
+.pomodoro_wrapper{
+  width: fit-content;
+}
+
+.Date{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+}
