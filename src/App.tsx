@@ -14,6 +14,9 @@ function App() {
       </div>
       <div className='pomodoro_wrapper'>
         <Clock />
+        <div className='pomodoro_btn_wrapper'>
+          <button className='ShowUpBtn'>To do List</button>
+        </div>
       </div>
     </>
   )
