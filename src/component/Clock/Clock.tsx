@@ -10,7 +10,7 @@ const Clock = () => {
     const [isRunning, setIsRunning] = useState(false);
 
     useEffect(() => {
-        let interval: any;
+        let interval : NodeJS.Timer;
 
         if (isRunning) {
             interval = setInterval(() => {
@@ -63,7 +63,7 @@ const Clock = () => {
         const { value } = e.target;
         if (value) {
             const num = parseInt(value)
-            if (num >= 0 && num <= 60) {
+            if (num >= 0 && num < 60) {
                 setSeconds(num);
             }
         }else{

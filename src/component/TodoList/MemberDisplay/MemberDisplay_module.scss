@@ -1,0 +1,64 @@
+// Member.scss
+
+.Member {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #fff; /* Set the text color to white */
+  
+    input[type='checkbox'] {
+      margin-right: 10px;
+    }
+  
+    span {
+      font-size: 20px;
+    }
+  
+    &.completed span {
+      text-decoration: line-through;
+      color: #999;
+    }
+  
+    input[type='text'] {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-right: 10px;
+      font-size: 20px;
+      font-family: 'VT323', monospace;
+      color: black; 
+      background-color: white;
+      outline: none;
+      height: 5px;
+      font-family: 'VT323';
+  
+      &:focus {
+        outline: none;
+        border-color: white;
+      }
+    }
+  
+    .Member__comboButton {
+        margin-left: 20px;
+      button {
+        border-radius: 6px;
+        border: none;
+        background-color: #fff;
+        color: #000;
+        font-size: 20px;
+        font-family: 'VT323', monospace;
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out;
+  
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+  
+        &:hover {
+          transform: scale(1.09);
+        }
+      }
+    }
+  }
+  
