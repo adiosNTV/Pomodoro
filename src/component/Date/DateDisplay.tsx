@@ -2,7 +2,7 @@ import { useState, useEffect} from 'react';
 import './DateDisplay_module.scss';
 
 const DateDisplay = () => {
-    const [currentDate, setCurrentDate] = useState<Date>(new Date);
+    const [currentDate, setCurrentDate] = useState(new Date);
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentDate(new Date());
