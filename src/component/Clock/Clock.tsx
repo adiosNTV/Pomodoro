@@ -10,7 +10,7 @@ const Clock = () => {
     const [isRunning, setIsRunning] = useState(false);
 
     useEffect(() => {
-        let interval : NodeJS.Timer;
+        let interval : any;
 
         if (isRunning) {
             interval = setInterval(() => {
